@@ -2325,6 +2325,12 @@
 					padding-bottom: 0;
 				}
 
+			.box.features .features-row img {
+				border: solid 1px #ccc;
+				border-radius: 3px;
+				box-shadow:3px 3px 3px #cccc;
+			}
+
 		.box.special {
 			text-align: center;
 		}
