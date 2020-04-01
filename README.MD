@@ -4,4 +4,6 @@ PandemicMemorial.com is a website dedicated to honoring those whose lives were l
 
 Check it out at http://pandemicmemorial.com/.
 
-In an effort to deliver quickly, a simple `index.html` page will be deployed and updated until a MERN/MEAN application can be developed.
+## Coding Guidelines
+
+We need to maintain a deployable application at all times.
