@@ -1,0 +1,52 @@
+@apiEndpoint = http://localhost:7000/api
+
+### USER CREATE
+# @name userCreate
+POST {{apiEndpoint}}/users HTTP/1.1
+Content-Type: application/json
+
+< user.json
+
+@authToken = {{userCreate.response.body.token}}
+
+### AUTH LOGIN
+# @name authLogin
+POST {{apiEndpoint}}/auth HTTP/1.1
+Content-Type: application/json
+
+< user.json
+
+@authToken = {{authLogin.response.body.token}}
+
+### AUTH MINE
+# @name authMine
+GET {{apiEndpoint}}/auth HTTP/1.1
+x-auth-token: {{authToken}}
+
+### PROFILE CREATE
+# @name profileCreate
+POST {{apiEndpoint}}/profile/ HTTP/1.1
+Content-Type: application/json
+x-auth-token: {{authToken}}
+
+< user.json
+
+### PROFILE GET ALL
+# @name profileGetAll
+GET {{apiEndpoint}}/profile HTTP/1.1
+x-auth-token: {{authToken}}
+
+### PROFILE GET MINE
+# @name profileGetMine
+GET {{apiEndpoint}}/profile/me HTTP/1.1
+x-auth-token: {{authToken}}
+
+### PROFILE GET BY USER
+# @name profileGetByUser
+GET {{apiEndpoint}}/profile/user/5e7e6705814447df1ce9ab77 HTTP/1.1
+x-auth-token: {{authToken}}
+
+### PROFILE DELETE
+# @name profileDelete
+DELETE {{apiEndpoint}}/profile HTTP/1.1
+x-auth-token: {{authToken}}

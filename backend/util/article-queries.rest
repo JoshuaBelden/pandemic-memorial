@@ -1,0 +1,23 @@
+@apiEndpoint = http://localhost:7000/api
+
+### AUTH LOGIN
+# @name authLogin
+POST {{apiEndpoint}}/auth HTTP/1.1
+Content-Type: application/json
+
+< user.json
+
+@authToken = {{authLogin.response.body.token}}
+
+### ARTICLE CREATE
+# @name articleCreate
+POST {{apiEndpoint}}/articles/ HTTP/1.1
+Content-Type: application/json
+x-auth-token: {{authToken}}
+
+< article.json
+
+### ARTICLES GET ALL
+# @name articlesGetAll
+GET {{apiEndpoint}}/articles/ HTTP/1.1
+

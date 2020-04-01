@@ -1,0 +1,34 @@
+{
+  "name": "dev-connector",
+  "version": "1.0.0",
+  "description": "Social platform for developers.",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server",
+    "start": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshuaBelden/dev-connector.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoshuaBelden/dev-connector/issues"
+  },
+  "homepage": "https://github.com/JoshuaBelden/dev-connector#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "gravatar": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.6",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2"
+  }
+}
