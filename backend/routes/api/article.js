@@ -57,4 +57,24 @@ router.get('/', async (req, res) => {
     }
 });
 
+// @route   GET api/articles/:id
+// @desc    Get article by id
+// @access  private
+router.get('/:id', auth, async (req, res) => {
+    try {
+        const article = await Article.findById(req.params.id);
+        if (!article) {
+            return res.status(404).json({ msg: 'Article not found'});
+        }
+
+        res.json(article);
+    } catch (error) {
+        if (error.kind === 'ObjectId') {
+            return res.status(404).json({ msg: 'Article not found'});
+        }
+        console.error(error.message);
+        res.status(500).send('Server error');
+    }
+});
+
 module.exports = router;

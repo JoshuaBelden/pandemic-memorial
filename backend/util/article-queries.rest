@@ -21,3 +21,7 @@ x-auth-token: {{authToken}}
 # @name articlesGetAll
 GET {{apiEndpoint}}/articles/ HTTP/1.1
 
+### GET ARTICLE BY ID
+# @name articleGetById
+GET {{apiEndpoint}}/articles/5e850db8150c35e95fb8cd91 HTTP/1.1
+x-auth-token: {{authToken}}
