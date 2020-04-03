@@ -1,0 +1,31 @@
+version: "2"
+services:
+    api:
+        build:
+            context: ./backend/
+        restart: always
+        container_name: pm_api
+        ports:
+            - "7000:7000"
+        volumes:
+            - ./backend:/api
+        depends_on:
+            - mongodb
+        networks:
+            - pm_network
+    mongodb:
+        image: mongo
+        restart: always
+        container_name: pm_mongodb
+        volumes:
+            - mongodata:/data/db
+        ports:
+            - 27017:27017
+        command: mongod --noauth
+        networks:
+            - pm_network
+networks:
+    pm_network:
+        driver: bridge
+volumes:
+    mongodata: {}

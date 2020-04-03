@@ -25,10 +25,10 @@
     "gravatar": "^1.8.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.6",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "nodemon": "^2.0.2"
   },
   "devDependencies": {
-    "concurrently": "^5.1.0",
-    "nodemon": "^2.0.2"
+    "concurrently": "^5.1.0"
   }
 }
