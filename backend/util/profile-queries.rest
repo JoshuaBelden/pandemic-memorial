@@ -1,4 +1,9 @@
-@apiEndpoint = http://localhost:7000/api
+@host = http://localhost:7000
+@apiEndpoint = {{host}}/api
+
+### ECHO
+# @name echo
+GET {{host}}/ HTTP/1.1
 
 ### USER CREATE
 # @name userCreate
