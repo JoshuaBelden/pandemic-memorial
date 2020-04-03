@@ -1,4 +1,6 @@
+
 @host = http://localhost:7000
+#@host = http://pandemicmemorial.com:7000
 @apiEndpoint = {{host}}/api
 
 ### ECHO
