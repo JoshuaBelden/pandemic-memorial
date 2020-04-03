@@ -1,0 +1,10 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "javascript.format.semicolons": "insert",
+    "files.insertFinalNewline": true,
+    "html.format.endWithNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true
+}

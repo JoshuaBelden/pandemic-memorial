@@ -1,0 +1,1 @@
+While the `/data` directory is ignored by git, and no files should be checked in, the directory needs to be here for Docker Compose to mount the MongoDB data directory.
