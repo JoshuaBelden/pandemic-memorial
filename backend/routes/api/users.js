@@ -6,6 +6,11 @@ const jwt = require('jsonwebtoken');
 const gravatar = require('gravatar');
 const config = require('config');
 
+const authSecret = process.env.AUTH_SECRET || config.get('authSecret');
+if (!authSecret) {
+    throw new Error("Authentication secret was not specified. Specify a secret to use as an environment variable.");
+}
+
 const router = express.Router();
 
 // @route   POST api/users
@@ -51,7 +56,7 @@ router.post('/', [
                 }
             };
 
-            jwt.sign(payload, config.get('authSecret'), { expiresIn: 3600 }, (err, token) => {
+            jwt.sign(payload, authSecret, { expiresIn: 3600 }, (err, token) => {
                 if (err) {
                     throw err;
                 }

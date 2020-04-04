@@ -1,4 +1,5 @@
 {
     "environment": "development",
+    "authSecret": "local-development-secret",
     "mongoEndpointUri": "mongodb://localhost/pandemicmemorial?retry-writes=true"
 }

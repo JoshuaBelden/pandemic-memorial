@@ -3,7 +3,7 @@ const config = require('config');
 
 module.exports = function (req, res, next) {
 
-    const authSecret = process.env.AUTH_SECRET;
+    const authSecret = process.env.AUTH_SECRET || config.get('authSecret');
     if (!authSecret) {
         throw new Error("Authentication secret was not specified. Specify a secret to use as an environment variable.");
     }

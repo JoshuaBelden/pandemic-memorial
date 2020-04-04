@@ -5,7 +5,6 @@ const config = require('config');
 
 const app = express();
 
-
 // MIDDLEWARE
 
 app.use(express.json({ extended: false }));
