@@ -4,10 +4,14 @@ PandemicMemorial.com is a website dedicated to honoring those whose lives were l
 
 Check it out at http://pandemicmemorial.com/.
 
+## Project News and Updates
+
+[Here](https://github.com/JoshuaBelden/pandemic-memorial/wiki)
+
 ## Coding Guidelines
 
-We need to maintain a deployable application at all times.
+[Coding Guidelines](https://github.com/JoshuaBelden/pandemic-memorial/wiki/Coding-Guidelines)
 
-## Looking for Updates
+## Local Development Environment Setup
 
-Go here https://github.com/JoshuaBelden/pandemic-memorial/wiki
+[Local Development Environment Setup](https://github.com/JoshuaBelden/pandemic-memorial/wiki/Local-Development-Environment-Setup)
