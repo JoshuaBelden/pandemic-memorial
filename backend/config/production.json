@@ -1,4 +1,4 @@
 {
-    "mongoEndpoint": "mongodb://mongodb/pandemicmemorial?retry-writes=true",
+    "mongoEndpointUri": "mongodb://mongodb/pandemicmemorial?retry-writes=true",
     "authSecret": "[REPLACE_IN_PROD]"
 }
