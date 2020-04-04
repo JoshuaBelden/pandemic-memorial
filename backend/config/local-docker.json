@@ -1,4 +1,0 @@
-{
-    "mongoEndpointUri": "mongodb://mongodb/pandemicmemorial?retry-writes=true",
-    "authSecret": "super-secret"
-}

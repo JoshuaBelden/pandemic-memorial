@@ -5,6 +5,7 @@ services:
             context: ./backend/
         restart: always
         container_name: pm_api
+        env_file: variables.env
         ports:
             - "7000:7000"
         volumes:
