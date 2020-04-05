@@ -13,13 +13,17 @@ import { loadUser } from './actions/auth';
 import setAuthToken from './utils/setAuthToken';
 
 import './App.css';
-import Axios from 'axios';
 
 if (localStorage.token) {
 	setAuthToken(localStorage.token);
 }
-axios.defaults.baseURL = 'http://pandemicmemorial.com:7000';
-console.log('axios default' + axios.defaults);
+
+if (process.env.NODE_ENV === 'production') {
+	axios.defaults.baseURL = 'https://api.pandemicmemorial.com';
+} else {
+	axios.defaults.baseURL = 'http://localhost:7000';
+}
+
 const App = () => {
 
 	useEffect(() => {

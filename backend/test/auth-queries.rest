@@ -1,10 +1,14 @@
 @host = http://localhost:7000
-#@host = http://pandemicmemorial.com:7000
+#@host = https://api.pandemicmemorial.com
 @apiEndpoint = {{host}}/api
 
 ### ECHO
 # @name echo
 GET {{host}}/ HTTP/1.1
+
+### Acme Challenge
+# @name acmeChallenge
+GET {{host}}/.well-known/acme-challenge/9000
 
 ### USER CREATE
 # @name userCreate
