@@ -2,7 +2,7 @@
 
 PandemicMemorial.com is a website dedicated to honoring those whose lives were lost in the fight against COVID-19.
 
-Check it out at http://pandemicmemorial.com/.
+Check it out at https://www.pandemicmemorial.com/.
 
 ## Project News and Updates
 
