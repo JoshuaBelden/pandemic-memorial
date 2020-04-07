@@ -15,20 +15,21 @@ export const Dashboard = () => {
                 <h2>Pandemic Memorial</h2>
                 <p>Dedicated to honoring those whose lives were lost in the fight against COVID-19.</p>
             </section>
+
             <section id="main" className="container">
                 <section className="box special">
                     <header className="major">
                         <h2>Latest in the tragic loss of life across the globe</h2>
                         <div>
                             <p>
-                                <b>Total Cases</b>: 1,015,403
+                                <b>Total Cases</b>: 1,347,676
 							</p>&nbsp;
                             <p>
-                                <b>Deaths</b>: 53,030
+                                <b>Deaths</b>: 74,744
 							</p>
                         </div>
                         <div>
-                            <sub>updated Wednesday April 2nd, 2020</sub>
+                            <sub>updated Wednesday April 6th, 2020</sub>
                         </div>
                     </header>
                     <span className="image featured"><img src="images/feature.jpg" alt="" /></span>
@@ -37,9 +38,43 @@ export const Dashboard = () => {
                     <div className="features-row">
                         <section>
                             <span>
+                                <img src="images/article/article-5.jpg" width="250" alt="article-5" />
+                            </span>
+                            <h3>Jean-Jacques Razafindranazy, 68</h3>
+                            <p>
+                                The Covid-19 outbreak has claimed its first fatality in the French medical profession, a 68-year-old A&E doctor who was retired but kept coming into work in order to help his colleagues.
+                                <br />
+                                Jean-Jacques Razafindranazy, who worked on an emergency ward in Compiègne, in the Oise département, where France’s first coronavirus cluster was recorded this month, died on Saturday at Lille university hospital.
+							</p>
+                            <sub>March 23rd, 2020</sub>
+                            <p>
+                                <b>source</b>: <a target="_blank" rel="noopener noreferrer" href="http://www.leparisien.fr/oise-60/coronavirus-un-urgentiste-de-compiegne-decede-apres-avoir-ete-infecte-22-03-2020-8285370.php">Le Parisien</a>
+                            </p>
+                        </section>
+                        <section>
+                            <span>
+                                <img src="images/article/article-6.jpg" width="250" alt="article-6" />
+                            </span>
+                            <h3>Dr. Frank Gabrin, 60</h3>
+                            <p>
+                                Dr. Frank Gabrin, 60, an ER doctor at New Jersey’s East Orange General Hospital, had not been at work since March 26 after becoming ill, NBC reported.
+                                <br />
+                                The chairman of the emergency department where Gabrin worked, Dr. Alvaro Alban, described the physician as “delightful, caring and wonderful to work with.”
+                                <br />
+                                “He had every intention to help. He was eager to keep working in the (Emergency Department) and was disappointed when he started to get symptoms. His intention was that his fever would break,” Alban told NBC.
+							</p>
+                            <sub>March 26th, 2020</sub>
+                            <p>
+                                <b>source</b>: <a target="_blank" rel="noopener noreferrer" href="https://www.nydailynews.com/coronavirus/ny-coronavirus-dr-frank-gabrin-er-doctor-dies-20200401-qzzgepnx5vbhlji2cqxnvgfzre-story.html">NY Daily News</a>
+                            </p>
+                        </section>
+                    </div>
+                    <div className="features-row">
+                        <section>
+                            <span>
                                 <img src="images/article/article-3.jpg" width="250" alt="article-3" />
                             </span>
-                            <h3>Suzanne Hoylaerts</h3>
+                            <h3>Suzanne Hoylaerts, 90</h3>
                             <p>
                                 In a bittersweet tale which has moved the world to tears, a 90 year old Belgian woman refused to be connected to a ventilator to aid her failing respiratory system, because she felt younger people had better need of it.
 								<br />
@@ -100,7 +135,7 @@ export const Dashboard = () => {
                             <span>
                                 <img src="images/article/article-1.jpeg" width="250" alt="article-1" />
                             </span>
-                            <h3>Isaura Castermans</h3>
+                            <h3>Isaura Castermans, 30</h3>
                             <p>
                                 A 30-year-old nurse from Belgium died in hospital on Thursday after becoming infected with the coronavirus. The disease spread to her heart and was fatal. She was athletic, did crossfit. We can't understand it, "says her parents. Isaura Castermans is said to be the youngest victim in Belgium to succumb to the virus.
 							</p>
