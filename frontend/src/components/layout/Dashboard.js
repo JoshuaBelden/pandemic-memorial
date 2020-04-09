@@ -38,7 +38,7 @@ export const Dashboard = () => {
                     <div className="features-row">
                         <section>
                             <span>
-                                <img src="images/article/article-5.jpg" width="250" alt="article-7" />
+                                <img src="images/article/article-7.jpg" width="250" alt="article-7" />
                             </span>
                             <h3>Abdul Mabud Chowdhury, 53</h3>
                             <p>
