@@ -22,19 +22,36 @@ export const Dashboard = () => {
                         <h2>Latest in the tragic loss of life across the globe</h2>
                         <div>
                             <p>
-                                <b>Total Cases</b>: 1,347,676
+                                <b>Total Cases</b>: 1,579,690
 							</p>&nbsp;
                             <p>
-                                <b>Deaths</b>: 74,744
+                                <b>Deaths</b>: 94,567
 							</p>
                         </div>
                         <div>
-                            <sub>updated Wednesday April 6th, 2020</sub>
+                            <sub>updated Wednesday April 9th, 2020</sub>
                         </div>
                     </header>
                     <span className="image featured"><img src="images/feature.jpg" alt="" /></span>
                 </section>
                 <section className="box special features">
+                    <div className="features-row">
+                        <section>
+                            <span>
+                                <img src="images/article/article-5.jpg" width="250" alt="article-7" />
+                            </span>
+                            <h3>Abdul Mabud Chowdhury, 53</h3>
+                            <p>
+                                Abdul Mabud Chowdhury, 53, passed away after 15 days in Queens Hospital, Romford, east London. He is one of 17 NHS medics to have lost their lives since the Covid-19 pandemic began.
+                                <br />
+                                Last month he wrote to Boris Johnson calling on him to ‘urgently’ make sure ‘each and every NHS worker in the UK’ had access to personal protective equipment. He said staff ‘are in direct contact’ with coronavirus patients and have a ‘human right like others to live in this world disease-free with our family and children’.
+							</p>
+                            <sub>April 9th, 2020</sub>
+                            <p>
+                                <b>source</b>: <a target="_blank" rel="noopener noreferrer" href="https://metro.co.uk/2020/04/09/doctor-warned-boris-johnson-urgent-need-ppe-dies-coronavirus-12533997/">Metro.co.uk</a>
+                            </p>
+                        </section>
+                    </div>
                     <div className="features-row">
                         <section>
                             <span>
