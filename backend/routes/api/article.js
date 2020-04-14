@@ -44,6 +44,33 @@ router.post('/', [auth, checkArticlesPost], async (req, res) => {
     }
 });
 
+// @route   Articles api/articles/batch
+// @desc    Creates all articles in a batch
+// @access  private
+router.post('/batch', [auth, checkArticlesPost], async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty) {
+        return res.status(400).json({ errors: errors.array });
+    }
+
+    try {
+        req.body.map(async article => {
+            const newArticle = new Article({
+                title: article.title,
+                body: article.body,
+                image: article.image,
+                source: article.source
+            });
+            await newArticle.save();
+            return newArticle;
+        });
+        res.status(200);
+    } catch (error) {
+        console.error(error.message);
+        res.status(500).send('Server error');
+    }
+});
+
 // @route   GET api/articles
 // @desc    Gets all articles
 // @access  Public
@@ -64,13 +91,13 @@ router.get('/:id', auth, async (req, res) => {
     try {
         const article = await Article.findById(req.params.id);
         if (!article) {
-            return res.status(404).json({ msg: 'Article not found'});
+            return res.status(404).json({ msg: 'Article not found' });
         }
 
         res.json(article);
     } catch (error) {
         if (error.kind === 'ObjectId') {
-            return res.status(404).json({ msg: 'Article not found'});
+            return res.status(404).json({ msg: 'Article not found' });
         }
         console.error(error.message);
         res.status(500).send('Server error');

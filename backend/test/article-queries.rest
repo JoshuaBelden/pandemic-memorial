@@ -11,15 +11,58 @@ Content-Type: application/json
 
 ### ARTICLE CREATE
 # @name articleCreate
-POST {{apiEndpoint}}/articles/ HTTP/1.1
+POST {{apiEndpoint}}/article/batch HTTP/1.1
 Content-Type: application/json
 x-auth-token: {{authToken}}
 
-< article.json
+[
+    {
+        "title": "Abdul Mabud Chowdhury, 53",
+        "body": "Abdul Mabud Chowdhury, 53, passed away after 15 days in Queens Hospital, Romford, east London. He is one of 17 NHS medics to have lost their lives since the Covid-19 pandemic began.<br />Last month he wrote to Boris Johnson calling on him to ‘urgently’ make sure ‘each and every NHS worker in the UK’ had access to personal protective equipment. He said staff ‘are in direct contact’ with coronavirus patients and have a ‘human right like others to live in this world disease-free with our family and children’.",
+        "image": "images/article/article-7.jpg",
+        "source": "https://metro.co.uk/2020/04/09/doctor-warned-boris-johnson-urgent-need-ppe-dies-coronavirus-12533997",
+        "created": "April 9th, 2020"
+    },
+    {
+        "title": "Jean-Jacques Razafindranazy, 68",
+        "body": "The Covid-19 outbreak has claimed its first fatality in the French medical profession, a 68-year-old A&E doctor who was retired but kept coming into work in order to help his colleagues.<br />Jean-Jacques Razafindranazy, who worked on an emergency ward in Compiègne, in the Oise département, where France’s first coronavirus cluster was recorded this month, died on Saturday at Lille university hospital.",
+        "image": "images/article/article-5.jpg",
+        "source": "http://www.leparisien.fr/oise-60/coronavirus-un-urgentiste-de-compiegne-decede-apres-avoir-ete-infecte-22-03-2020-8285370.php",
+        "created": "March 23rd, 2020"
+    },
+    {
+        "title": "Dr. Frank Gabrin, 60",
+        "body": "Dr. Frank Gabrin, 60, an ER doctor at New Jersey’s East Orange General Hospital, had not been at work since March 26 after becoming ill, NBC reported. The chairman of the emergency department where Gabrin worked, Dr. Alvaro Alban, described the physician as 'delightful, caring and wonderful to work with.' 'He had every intention to help. He was eager to keep working in the (Emergency Department) and was disappointed when he started to get symptoms. His intention was that his fever would break,' Alban told NBC.",
+        "image": "images/article/article-6.jpg",
+        "source": "https://www.nydailynews.com/coronavirus/ny-coronavirus-dr-frank-gabrin-er-doctor-dies-20200401-qzzgepnx5vbhlji2cqxnvgfzre-story.html",
+        "created": "March 26th, 2020"
+    },
+    {
+        "title": "Kious Kelly",
+        "body": "Kious Kelly, a nurse manager at a Manhattan hospital, texted his sister on March 18 with some devastating news: He had tested positive for the coronavirus and was on a ventilator in the intensive care unit. He told her he could text but not talk. 'I’m okay. Don’t tell Mom and Dad. They’ll worry,' he wrote to his sister, Marya Patrice Sherron. That was his last message. Ms. Sherron’s subsequent texts to him went unanswered. In less than a week, he was dead.",
+        "image": "images/article/article-4.jpg",
+        "source": "https://www.nytimes.com/2020/03/26/nyregion/nurse-dies-coronavirus-mount-sinai.html?action=click&module=Top%20Stories&pgtype=Homepage",
+        "created": "March 26th, 2020"
+    },
+    {
+        "title": "James Villecco, 55",
+        "body": "An ambulance mechanic and U.S. Army veteran on Sunday became the first FDNY member to die of coronavirus. James Villecco, 55, a Staten Island resident, was hailed as an 'unsung hero.' 'This is the kind of unsung hero who doesn’t get the credit he deserves,' Mayor de Blasio told reporters. 'This is the kind of man who keeps us safe because he kept the ambulances in good repair so they could get there to help all of us.' Villecco joined FDNY fleet services in 2014, and worked at the FDNY’s Coney Island repair facility and later, the department’s ambulance repair shop on Review Ave. in Long Island City. 'James Villecco was one of those truly unsung heroes in our Department whose outstanding work provided medical care for the people of our city,' FDNY Commissioner Daniel Nigro said. 'The entire Department mourns his loss.' Villecco is survived by his wife, Joy, and daughter, Jessica.",
+        "image": "images/article/article-2.jpg",
+        "source": "https://www.nydailynews.com/coronavirus/ny-coronavirus-fdny-ambulance-mechanic-dies-20200329-tjfnlsfapvggballrtuo2whfde-story.html",
+        "created": "March 29th, 2020"
+    },
+    {
+        "title": "Isaura Castermans, 30",
+        "body": "A 30-year-old nurse from Belgium died in hospital on Thursday after becoming infected with the coronavirus. The disease spread to her heart and was fatal. She was athletic, did crossfit. We can't understand it, 'says her parents. Isaura Castermans is said to be the youngest victim in Belgium to succumb to the virus.'",
+        "image": "images/article/article-1.jpg",
+        "source": "https://www.ad.nl/buitenland/belgische-verpleegster-30-overlijdt-nadat-coronavirus-toeslaat-op-hart-isaura-was-kerngezond~acc0fd05",
+        "created": "March 28th, 2020"
+    }
+]
 
 ### ARTICLES GET ALL
 # @name articlesGetAll
-GET {{apiEndpoint}}/articles/ HTTP/1.1
+GET {{apiEndpoint}}/article/ HTTP/1.1
 
 ### GET ARTICLE BY ID
 # @name articleGetById
