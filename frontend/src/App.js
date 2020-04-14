@@ -13,6 +13,7 @@ import { loadUser } from './actions/auth';
 import setAuthToken from './utils/setAuthToken';
 
 import './App.css';
+import { loadArticles } from './actions/article';
 
 if (localStorage.token) {
 	setAuthToken(localStorage.token);
@@ -28,6 +29,7 @@ const App = () => {
 
 	useEffect(() => {
 		store.dispatch(loadUser());
+		store.dispatch(loadArticles());
 	}, []);
 
 	return (

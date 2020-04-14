@@ -23,7 +23,7 @@ app.get('/', (req, res) => res.send('API Running'));
 app.use('/api/users', require('./routes/api/users'));
 app.use('/api/auth', require('./routes/api/auth'));
 app.use('/api/profile', require('./routes/api/profile'));
-app.use('/api/articles', require('./routes/api/article'));
+app.use('/api/article', require('./routes/api/article'));
 
 connectDB();
 
