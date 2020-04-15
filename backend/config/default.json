@@ -1,5 +1,16 @@
 {
     "environment": "development",
     "authSecret": "local-development-secret",
-    "mongoEndpointUri": "mongodb://localhost/pandemicmemorial?retry-writes=true"
+    "mongoEndpointUri": "mongodb://localhost/pandemicmemorial?retry-writes=true",
+    "smtp": {
+        "host": "",
+        "port": 25,
+        "user": "",
+        "password": ""
+    },
+    "site": {
+        "administrator": {
+            "email": ""
+        }
+    }
 }
