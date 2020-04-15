@@ -1,4 +1,0 @@
-{
-    "environment": "production",
-    "mongoEndpointUri": "mongodb://mongodb/pandemicmemorial?retry-writes=true"
-}

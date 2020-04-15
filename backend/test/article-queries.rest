@@ -1,5 +1,11 @@
-@apiEndpoint = http://localhost:7000/api
+### -------------------------------------------------------
+### VARIABLES
+#@host = http://localhost:7000
+@host = https://api.pandemicmemorial.com
+@apiEndpoint = {{host}}/api
 
+
+### -------------------------------------------------------
 ### AUTH LOGIN
 # @name authLogin
 POST {{apiEndpoint}}/auth HTTP/1.1
@@ -9,6 +15,21 @@ Content-Type: application/json
 
 @authToken = {{authLogin.response.body.token}}
 
+
+### -------------------------------------------------------
+### ARTICLES GET ALL
+# @name articlesGetAll
+GET {{apiEndpoint}}/article/ HTTP/1.1
+
+
+### -------------------------------------------------------
+### GET ARTICLE BY ID
+# @name articleGetById
+GET {{apiEndpoint}}/articles/5e850db8150c35e95fb8cd91 HTTP/1.1
+x-auth-token: {{authToken}}
+
+
+### -------------------------------------------------------
 ### ARTICLE CREATE
 # @name articleCreate
 POST {{apiEndpoint}}/article/batch HTTP/1.1
@@ -59,12 +80,3 @@ x-auth-token: {{authToken}}
         "created": "March 28th, 2020"
     }
 ]
-
-### ARTICLES GET ALL
-# @name articlesGetAll
-GET {{apiEndpoint}}/article/ HTTP/1.1
-
-### GET ARTICLE BY ID
-# @name articleGetById
-GET {{apiEndpoint}}/articles/5e850db8150c35e95fb8cd91 HTTP/1.1
-x-auth-token: {{authToken}}

@@ -14,7 +14,6 @@ export default function (state = initialState, action) {
                 ...state,
                 articles: payload
             };
-            console.log('jcbdbg:article.reducer,newState', newState);
             return newState;
 
         default:
