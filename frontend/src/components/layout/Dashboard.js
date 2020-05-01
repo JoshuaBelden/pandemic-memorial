@@ -23,14 +23,14 @@ export const Dashboard = () => {
                         <h2>Latest in the tragic loss of life across the globe</h2>
                         <div>
                             <p>
-                                <b>Total Cases</b>: 2,501,156
+                                <b>Total Cases</b>: 3,276,373
 							</p>&nbsp;
                             <p>
-                                <b>Deaths</b>: 171,810
+                                <b>Deaths</b>: 233,998
 							</p>
                         </div>
                         <div>
-                            <sub>updated Wednesday April 21st, 2020</sub>
+                            <sub>updated Wednesday May 1st, 2020</sub>
                         </div>
                     </header>
                     <span className="image featured"><img src="images/feature.jpg" alt="" /></span>
